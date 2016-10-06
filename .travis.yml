@@ -27,6 +27,8 @@ script:
 - docker version
 - docker-compose version
 - bats tests/ghost.bats
+after_failure:
+- docker-compose -f docker-compose.travis.yml logs
 notifications:
   email:
     on_success: never
