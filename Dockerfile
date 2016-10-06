@@ -1,4 +1,4 @@
-FROM zzrot/alpine-node:v4.4.2
+FROM mhart/alpine-node:4.6
 
 MAINTAINER ZZROT LLC <docker@zzrot.com>
 
@@ -17,7 +17,7 @@ RUN apk --no-cache add tar tini \
 	&& unzip ghost.zip \
 	&& npm install --production \
 	&& rm ghost.zip \
-	&& apk del devs \
+	&& apk del devs gcc make python wget unzip ca-certificates \
 	&& npm cache clean \
 	&& rm -rf /tmp/npm*
 
@@ -32,7 +32,7 @@ RUN chmod +x /entrypoint.sh
 EXPOSE 2368
 
 #Run Init System
-ENTRYPOINT [ "tini" ]
+ENTRYPOINT [ "/sbin/tini" ]
 
 #Run Startup script
 CMD [ "/entrypoint.sh" ]
