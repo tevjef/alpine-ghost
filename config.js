@@ -28,9 +28,9 @@ var mailName = CheckEnvVar('GHOST_MAIL_NAME', undefined);
 var mailUser = CheckEnvVar('GHOST_MAIL_USER', undefined);
 var mailPass = CheckEnvVar('GHOST_MAIL_PASS', undefined);
 var mailFrom = CheckEnvVar('GHOST_MAIL_FROM', undefined);
-var mailSecureConnection = CheckEnvVar('GHOST_MAIL_SECURE_CONNECTION', false);
+var mailSecureConnection = CheckEnvVar('GHOST_MAIL_SECURE_CONNECTION', undefined);
 var mailPort = CheckEnvVar('GHOST_MAIL_PORT', undefined);
-var mailIgnoreTLS = CheckEnvVar('GHOST_MAIL_IGNORE_TLS', false);
+var mailIgnoreTLS = CheckEnvVar('GHOST_MAIL_IGNORE_TLS', undefined);
 var mailDebug = CheckEnvVar('GHOST_MAIL_DEBUG', '');
 
 if (mailService != '') {
