@@ -1,6 +1,6 @@
 FROM mhart/alpine-node:4.6
 
-MAINTAINER ZZROT LLC <docker@zzrot.com>
+MAINTAINER Tevin Jeffrey <tev.jeffrey+docker@gmail.com>
 
 #ENV VARIABLES
 ENV GHOST_SOURCE /usr/src/app

@@ -21,15 +21,15 @@ var sslDomain = CheckEnvVar('GHOST_SSL_DOMAIN', undefined); // Won't advertise i
 var forceAdminSSL = CheckEnvVar('GHOST_FORCE_ADMIN_SSL', false);
 
 // Mail Variables
-var mailTransport = CheckEnvVar('GHOST_MAIL_TRANSPORT', '');
-var mailService = CheckEnvVar('GHOST_MAIL_SERVICE', '');
+var mailTransport = CheckEnvVar('GHOST_MAIL_TRANSPORT', undefined);
+var mailService = CheckEnvVar('GHOST_MAIL_SERVICE', undefined);
 var mailHost = CheckEnvVar('GHOST_MAIL_HOST', 'localhost');
-var mailName = CheckEnvVar('GHOST_MAIL_NAME', '');
-var mailUser = CheckEnvVar('GHOST_MAIL_USER', '');
-var mailPass = CheckEnvVar('GHOST_MAIL_PASS', '');
-var mailFrom = CheckEnvVar('GHOST_MAIL_FROM', '');
+var mailName = CheckEnvVar('GHOST_MAIL_NAME', undefined);
+var mailUser = CheckEnvVar('GHOST_MAIL_USER', undefined);
+var mailPass = CheckEnvVar('GHOST_MAIL_PASS', undefined);
+var mailFrom = CheckEnvVar('GHOST_MAIL_FROM', undefined);
 var mailSecureConnection = CheckEnvVar('GHOST_MAIL_SECURE_CONNECTION', false);
-var mailPort = CheckEnvVar('GHOST_MAIL_PORT', 25);
+var mailPort = CheckEnvVar('GHOST_MAIL_PORT', undefined);
 var mailIgnoreTLS = CheckEnvVar('GHOST_MAIL_IGNORE_TLS', false);
 var mailDebug = CheckEnvVar('GHOST_MAIL_DEBUG', '');
 
