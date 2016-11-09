@@ -5,7 +5,7 @@ MAINTAINER Tevin Jeffrey <tev.jeffrey+docker@gmail.com>
 #ENV VARIABLES
 ENV GHOST_SOURCE /usr/src/app
 ENV GHOST_CONTENT /var/lib/ghost
-ENV GHOST_VERSION 0.11.2
+ENV GHOST_VERSION 0.11.3
 
 #Change WORKDIR to ghost directory
 WORKDIR $GHOST_SOURCE
